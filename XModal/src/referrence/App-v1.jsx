@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import UserForm from "./components/UserForm";
 
 function App() {
@@ -33,14 +34,14 @@ function App() {
       </header>
       <button onClick={openModal}>Open Form</button>
       {isOpen &&
-
-        <div className="modal">
-          <div className="modal-content" ref={ref}>
-            <UserForm />
-          </div>
-        </div>
-
-      }
+        createPortal(
+          <div className="modal">
+            <div className="modal-content" ref={ref}>
+              <UserForm />
+            </div>
+          </div>,
+          document.body
+        )}
     </>
   );
 }
