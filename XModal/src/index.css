@@ -1,8 +1,5 @@
-
-
-.modal{
+.modal {
   position: fixed;
-  border: 1px solid red;
   height: 100%;
   top: 0;
   left: 0;
@@ -13,7 +10,7 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.modal-content{
+.modal-content {
   width: 60%;
   max-width: 676px;
   margin: 0 auto;
@@ -23,17 +20,17 @@
   background-color: #ffff;
   border-radius: 8px;
 }
-.modal-content h2{
+.modal-content h2 {
   margin-bottom: 2rem;
 }
 
-.modal-content form{
+.modal-content form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.modal-content form button{
+.submit-button {
   align-self: center;
   padding: 0.5rem 2rem;
   background-color: #2563eb;
@@ -45,6 +42,6 @@
   cursor: pointer;
 }
 
-.modal-content form input{
+.modal-content form input {
   padding: 0.25rem 0;
 }
